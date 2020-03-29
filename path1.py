@@ -7,7 +7,25 @@ from algo import Algo
 class gt_grid(Algo):
 
 	def __init__(self):
+<<<<<<< HEAD
 		Algo.__init__(self)
+=======
+		self.start_r = 0
+		self.start_c = 0
+		self.end_r = 59
+		self.end_c = 59
+		self.col = 60
+		self.row = 60
+		self.walls = {}
+		self.t1 = [1, 0, -1, 0]
+		self.t2 = [0, 1, 0, -1]
+		self.vis = [[False for j in range(60)]for i in range(60)]
+		self.The_list = []
+		self.flag = False
+		self.parent = {}
+		self.ways = [[False for j in range(60)]for i in range(60)]
+		self.dist = [[False for j in range(60)]for i in range(60)]
+>>>>>>> 76a13fc2e13190847a19e6bdf8968f5d27e8a0ee
 		pygame.init()
 		self.screen = pygame.display.set_mode((900,900))
 
@@ -110,4 +128,9 @@ class gt_grid(Algo):
 
 obj = gt_grid()
 ways, dist = obj.init() #distance and number of ways
+<<<<<<< HEAD
 print(f"the shortest path to dest is {dist} blocks away and there are {ways} to reach the destination")
+=======
+print(f"the shortest path to dest is {dist} blocks away and there are {ways} to reach the destination")
+
+>>>>>>> 76a13fc2e13190847a19e6bdf8968f5d27e8a0ee
